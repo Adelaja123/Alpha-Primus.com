@@ -1,5 +1,4 @@
-// src/App.tsx
-import PageLayout from "./layouts/PageLayout";
+import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -9,14 +8,15 @@ import Contact from "./components/Contact";
 
 const App = () => {
   return (
-    <PageLayout>
+    <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-500">
+      <Navbar />
       <Hero />
       <About />
       <Skills />
       <Projects />
       <Testimonials />
       <Contact />
-    </PageLayout>
+    </div>
   );
 };
 
